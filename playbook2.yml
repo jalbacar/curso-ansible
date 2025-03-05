@@ -1,7 +1,7 @@
 ---
 
 - name: "Primer playbook"
-  hosts: ubuntu1
+  hosts: "{{ host_name }}"
   become: true
   become_method: "ansible.builtin.sudo"
 
