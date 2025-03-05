@@ -1,0 +1,15 @@
+---
+
+- name: Parar y rearrancar servicio Windows
+  hosts: win_servers
+  gather_facts: false
+
+  tasks:
+    - name: Parar servicio audio
+      ansible.windows.win_service:
+        name: Audiosrv
+        state: stopped
+    - name: Rearrancar service
+      ansible.windows.win_service:
+        name: Audiosrv
+        state: started
