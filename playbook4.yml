@@ -32,4 +32,4 @@
         msg: "Curso: {{ curso }}. SO: {{ desarrollo }} Capacidad: {{ desarrollo.disco }}"
     - name: "Ver variables 3"
       debug:
-        msg: "User: {{ user }} Password: {{  password }}"
+        msg: "User: {{ user }}"
